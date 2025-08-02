@@ -10,10 +10,9 @@ const Header: React.FC = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <div className="relative">
-              {/* Robot Head Icon */}
               <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg flex items-center justify-center relative overflow-hidden">
                 <div className="w-6 h-6 bg-white rounded-sm relative">
-                  {/* Robot eyes */}
+                  {/* Augen */}
                   <div className="absolute top-1 left-1 w-1 h-1 bg-blue-500 rounded-full"></div>
                   <div className="absolute top-1 right-1 w-1 h-1 bg-blue-500 rounded-full"></div>
                   {/* Headset */}
@@ -21,7 +20,7 @@ const Header: React.FC = () => {
                   <div className="absolute -left-1 top-2 w-1 h-1 bg-blue-600 rounded-full"></div>
                   <div className="absolute -right-1 top-2 w-1 h-1 bg-blue-600 rounded-full"></div>
                 </div>
-                {/* Sound waves */}
+                {/* Soundwellen */}
                 <div className="absolute -right-2 top-1/2 transform -translate-y-1/2">
                   <div className="w-1 h-1 bg-orange-500 rounded-full animate-pulse"></div>
                   <div className="w-0.5 h-0.5 bg-orange-500 rounded-full animate-pulse mt-1"></div>
@@ -47,7 +46,7 @@ const Header: React.FC = () => {
             <a href="#contact" className="text-gray-300 hover:text-orange-500 transition-colors">Kontakt</a>
           </nav>
 
-          {/* Mobile menu button */}
+          {/* Mobile Button */}
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
