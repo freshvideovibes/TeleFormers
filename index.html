@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeleFormers - Formation für Kommunikation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* A small style override for a custom animation */
+      @keyframes pulse-glow {
+        0%, 100% {
+          box-shadow: 0 0 10px #f97316, 0 0 20px #f97316;
+          opacity: 1;
+        }
+        50% {
+          box-shadow: 0 0 20px #f97316, 0 0 40px #f97316;
+          opacity: 0.8;
+        }
+      }
+      .animate-pulse-glow {
+        animation: pulse-glow 3s infinite;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-900 text-gray-300 font-sans antialiased scroll-smooth">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
